@@ -64,79 +64,82 @@
 		<p class="lead"><small>
         I am a researcher and a software engineer, working on large-scale AI infrastructure.
         Currently, I am interested in designing and optimizing the systems and algorithms for AGI, 
-        with a focus on (Multi-modal) LLMs, Mixture-of-Experts (MoE), and Generative Models for Image/Video. 
+        with a focus on (Multi-modal) LLMs, Mixture-of-Experts (MoE), and scalable RL infrastructure. 
         <br>
 
-        <br> I work at ByteDance AML since 2021, where I lead the distributed training team 
-        and also built the first engineering framework for LLM pretraining and RLHF-based alignment, known as the Seed Project.
-        Prior to Seed, I was the tech lead of two core projects: (1) BytePS: collective communication optimizations for PyTorch and TensorFlow; 
-        (2) MoE for NLP and multi-modality encoders: increasing the base model capacity with large number of experts.
-        Both BytePS and MoE models have been deployed on thousands of training and serving GPUs for ByteDance businesses, such as Douyin/Search/RecSys, etc.
+        <br> I worked at ByteDance AML since 2021, where I led the distributed training team 
+        and built the first engineering framework for LLM pre-training and post-training, known as the Seed Project.
+        Prior to Seed, I led the ByteCCL and MoE projects in ByteDance, 
+        both of which had been deployed on thousands of training and serving GPUs for ByteDance businesses. <br>
 
-        <br><br> I have experience optimizing and diagnosing systems involving >10000 GPUs, and had deeply participated in training models reaching up to 10<sup>25</sup> FLOPs.
-
-        <br><br>I received my PhD in Computer Science from Tsinghua University in 2021, and my BS from Nanjing University in 2016. <br>
-
-
+        <br> I have experience optimizing and diagnosing systems involving >10000 GPUs, 
+        and had deeply participated in training several LLMs (with multimodality) reaching up to 1e25 FLOPs from scratch.
+        Academic collaborations are welcome in the broad field of LLM system research. Feel free to email me if interested. 
 
         <hr>
-        <!-- <h3>Research</h3>
-        <p class="lead"><small>
-        My research currently focuses on large language models.
-        <br><br> -->
-
-
 
         <p class="lead">
           <b>Selected Papers</b><br> 
-
             <p class="lead"> <small>
-              DSV: Exploiting Dynamic Sparsity to Accelerate Large-Scale Video DiT Training.<br>
-              <small> Xin Tan, Yuetao Chen, <b>Yimin Jiang</b>, Xing Chen, Kun Yan, Nan Duan, Yibo Zhu, Daxin Jiang, Hong Xu<br>
-              Preprint [<a href="files/preprint_dsv.pdf">PDF</a>]
-              </small>
+              [<a href="files/preprint_streamrl.pdf">Preprint</a>] StreamRL: Scalable, Heterogeneous, and Elastic RL for LLMs with Disaggregated Stream Generation.<br>
+              <!-- <small> Yinmin Zhong, Zili Zhang, Xiaoniu Song, Hanpeng Hu, Chao Jin, Bingyang Wu, Nuo Chen, Yukun Chen, Yu Zhou, Changyi Wan, Hongyu Zhou, Yimin Jiang, Yibo Zhu, Daxin Jiang<br> -->
+              <!-- </small> -->
             </p>
 
             <p class="lead"> <small>
-              InfinitePOD: Building Datacenter-Scale High-Bandwidth Domain for LLM with Optical Circuit Switching Transceivers.<br>
-              <small> Chenchen Shou, Guyue Liu, Hao Nie, Huaiyu Meng, Yu Zhou, <b>Yimin Jiang</b>, Wenqing Lv, Yelong Xu, Yuanwei Lu, Zhang Chen, Yanbo Yu, Yichen Shen, Yibo Zhu, Daxin Jiang<br>
-              Preprint [<a href="files/preprint_InfinitePOD.pdf">PDF</a>]
-              </small>
+              [<a href="files/preprint_pipeweaver.pdf">Preprint</a>] PipeWeaver: Addressing Data Dynamicity in Large Multimodal Model Training with Dynamic Interleaved Pipeline.<br>
+              <!-- <small> Zhenliang Xue, Hanpeng Hu, Xing Chen, <b>Yimin Jiang</b>, Yixin Song, Zeyu Mi, Yibo Zhu, Daxin Jiang, Yubin Xia, Haibo Chen<br> -->
+              <!-- </small> -->
             </p>
 
             <p class="lead"> <small>
-              Teola: Towards End-to-End Optimization of LLM-based Applications.<br>
-              <small> Xin Tan, <b>Yimin Jiang</b>, Yitao Yang, Hong Xu<br>
-              ASPLOS 2025 [<a href="files/preprint_teola.pdf">PDF</a>]
-              </small>
+              [<a href="files/preprint_dsv.pdf">Preprint</a>] DSV: Exploiting Dynamic Sparsity to Accelerate Large-Scale Video DiT Training.<br>
+              <!-- <small> Xin Tan, Yuetao Chen, <b>Yimin Jiang</b>, Xing Chen, Kun Yan, Nan Duan, Yibo Zhu, Daxin Jiang, Hong Xu<br> -->
+              <!-- </small> -->
             </p>
 
             <p class="lead"> <small>
-              Adaptive Gating in Mixture-of-Experts based Language Models.<br>
-              <small> Jiamin Li, Qiang Su, Yitao Yang, <b>Yimin Jiang</b>, Cong Wang, Hong Xu<br>
-              EMNLP 2023 [<a href="files/emnlp2023_adamoe.pdf">PDF</a>]
-              </small>
+              [<a href="files/sigcomm25_disttrain.pdf">SIGCOMM'25</a>] DistTrain: Addressing model and data heterogeneity with disaggregated training for multimodal LLMs.<br>
             </p>
 
             <p class="lead"> <small>
-              Janus: A Unified Distributed Training Framework for Sparse Mixture-of-Experts Models.<br>
-              <small> Juncai Liu, Jessie Hui Wang, <b>Yimin Jiang</b><br>
-              SIGCOMM 2023 [<a href="files/sigcomm2023_janus.pdf">PDF</a>]
-              </small>
+              [<a href="files/preprint_InfinitePOD.pdf">SIGCOMM'25</a>] Building Datacenter-Scale High-Bandwidth Domain for LLM with Optical Circuit Switching Transceivers.<br>
+              <!-- <small> Chenchen Shou, Guyue Liu, Hao Nie, Huaiyu Meng, Yu Zhou, <b>Yimin Jiang</b>, Wenqing Lv, Yelong Xu, Yuanwei Lu, Zhang Chen, Yanbo Yu, Yichen Shen, Yibo Zhu, Daxin Jiang<br> -->
+              <!-- </small> -->
             </p>
 
             <p class="lead"> <small>
-              Accelerating Distributed MoE Training and Inference with Lina.<br>
-              <small> Jiamin Li, <b>Yimin Jiang</b>, Yibo Zhu, Cong Wang, Hong Xu<br>
-              ATC 2023 [<a href="files/atc23_lina.pdf">PDF</a>]
-              </small>
+              [<a href="files/preprint_teola.pdf">ASPLOS'25</a>] Teola: Towards End-to-End Optimization of LLM-based Applications.<br>
+              <!-- <small> Xin Tan, <b>Yimin Jiang</b>, Yitao Yang, Hong Xu<br> -->
+              <!-- </small> -->
             </p>
 
             <p class="lead"> <small>
-              BytePS: A Unified Architecture for Accelerating Distributed DNN Training in Heterogeneous GPU/CPU Clusters.<br>
-              <small> <b>Yimin Jiang</b>, Yibo Zhu, Chang Lan, Bairen Yi, Yong Cui, Chuanxiong Guo<br>
-              OSDI 2020 [<a href="files/osdi2020_byteps.pdf">PDF</a>] [<a href="https://github.com/bytedance/byteps">CODE</a>]
-              </small>
+              [<a href="https://www.usenix.org/system/files/nsdi25-zhong.pdf">NSDI'25</a>] Optimizing RLHF Training for Large Language Models with Stage Fusion.<br>
+            </p>
+
+            <p class="lead"> <small>
+              [<a href="files/emnlp2023_adamoe.pdf">EMNLP'23</a>] Adaptive Gating in Mixture-of-Experts based Language Models.<br>
+              <!-- <small> Jiamin Li, Qiang Su, Yitao Yang, <b>Yimin Jiang</b>, Cong Wang, Hong Xu<br> -->
+              <!-- </small> -->
+            </p>
+
+            <p class="lead"> <small>
+              [<a href="files/sigcomm2023_janus.pdf">SIGCOMM'23</a>] Janus: A Unified Distributed Training Framework for Sparse Mixture-of-Experts Models.<br>
+              <!-- <small> Juncai Liu, Jessie Hui Wang, <b>Yimin Jiang</b><br> -->
+              <!-- </small> -->
+            </p>
+
+            <p class="lead"> <small>
+              [<a href="files/atc23_lina.pdf">ATC'23</a>] Accelerating Distributed MoE Training and Inference with Lina.<br>
+              <!-- <small> Jiamin Li, <b>Yimin Jiang</b>, Yibo Zhu, Cong Wang, Hong Xu<br> -->
+              <!-- </small> -->
+            </p>
+
+            <p class="lead"> <small>
+              [<a href="files/osdi2020_byteps.pdf">OSDI'20</a>] BytePS: A Unified Architecture for Accelerating Distributed DNN Training in Heterogeneous GPU/CPU Clusters.<br>
+              <!-- <small> <b>Yimin Jiang</b>, Yibo Zhu, Chang Lan, Bairen Yi, Yong Cui, Chuanxiong Guo<br> -->
+              <!-- </small> -->
             </p>
 
         </p>
